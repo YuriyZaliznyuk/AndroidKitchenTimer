@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.btnStart:
-			Toast.makeText(this, edtSeconds.getText().toString() + " minutes", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, edtSeconds.getText().toString() + " seconds", Toast.LENGTH_LONG).show();
 			try {
 				showTimer(Integer.parseInt(edtSeconds.getText().toString()) * MILLIS_PER_SECOND);
 			} catch (NumberFormatException e) {
