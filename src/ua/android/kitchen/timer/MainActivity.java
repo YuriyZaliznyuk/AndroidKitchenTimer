@@ -23,21 +23,15 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Log.d(LOG_TAG, "--- OnCreate started 1 ---");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		
-		Log.d(LOG_TAG, "--- OnCreate started 2 ---");
-
 		edtSeconds = (EditText) findViewById(R.id.edtSeconds);
 		lblSeconds = (TextView) findViewById(R.id.lblSeconds);
 		btnStart = (Button) findViewById(R.id.btnStart);
 		lblTimer = (TextView) findViewById(R.id.lblTimer);
 
-		Log.d(LOG_TAG, "--- OnCreate started 3 ---");
-		
 		btnStart.setOnClickListener(this);
-		Log.d(LOG_TAG, "--- OnCreate finishes ---");
 	}
 
 	@Override
